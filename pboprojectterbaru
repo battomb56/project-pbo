@@ -1,0 +1,19 @@
+create table nomer(
+	id_nomer smallserial primary key,
+	nama_pemilik varchar (50) not null,
+	hewan varchar (50) not null,
+	no_hp varchar (12) not null,
+	gejala text not null	
+)
+select*from nomer
+
+
+create table akun(
+	id_admin smallserial primary key,
+	username varchar (100) not null,
+	password varchar (100) not null	
+)
+
+insert into akun(username, password)
+values ('admin','12345')
+select*from akun
